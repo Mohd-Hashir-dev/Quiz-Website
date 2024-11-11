@@ -1,0 +1,359 @@
+@keyframes profileall
+{
+  from{
+      transform: translateY(-1rem);
+  }
+  to{
+    transform: translateY(1rem);
+}
+}
+
+@keyframes profile2
+{
+  from{
+    transform: translateX(-80rem);
+  }
+  to
+   {
+    transform: translate(0px);
+  } 
+}
+
+@keyframes profile3
+{
+  from{
+    transform: translateX(80rem);
+  }
+  to
+   {
+    transform: translate(0px);
+  } 
+}
+
+@keyframes profile1
+{
+  
+  from{
+    transform: translateY(-80rem);
+  }
+  to
+   {
+    transform: translate(0px);
+  }
+}
+  /*
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+/*.....................................................................................................................................................*/
+
+body {
+  justify-content: center;
+  align-items: center;
+  font-family: Century Gothic;
+/*  background: linear-gradient(black 30% , #6fff00 50%);*/
+   background:black ;
+   border-top :2vw solid #6fff00 ;
+  margin: 0;
+ height :auto;
+ -ms-overflow-style: none; 
+ scrollbar-width: none;  
+
+  
+}
+
+.leader {
+  width: 100%;
+  height:12vw ;
+  color: rgb(111, 255, 0);
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  animation-name:profile1 ;
+  animation-duration: 2s;
+}
+
+.fire {
+  height:5vw;
+  width: 5vw;
+}
+
+.for_top_rankers h3 , h4 , #para
+{
+   font-size: 1vw;
+}
+
+
+.container_for_3_rankers {
+ 
+  color: white;
+  background: transparent;
+  margin-top: 8vw;
+  height: 20vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*
+.top3
+{
+  animation-name: profileall;
+  transition: 3s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+*/
+
+#toprankeprofile2
+{
+  animation-name: profile2;
+  animation-duration: 2s;
+  
+}
+#toprankeprofile3
+{
+  
+  animation-name: profile2;
+  animation-duration: 2s;
+}
+#toprankeprofile1
+{
+  animation-name: profile2;
+  animation-duration: 2s;
+}
+
+#toprankersprofile
+ {
+  width: 8vw;
+  height: 8vw;
+ }
+
+
+.top3 {
+  padding: 0.5vw;
+  background: rgb(51, 51, 51);
+  display: flex;
+  border-radius: 2vw;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+ 
+}
+.top3:hover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 10px#738069;
+  animation-duration: 2s;
+  transform: translateY(-2vw);
+  transition: 0.5s ;
+}
+
+
+.for_top_rankers {
+  font-size: 1vw;
+  background: #2c2c2cfe;
+  width: 8vw;
+  height: 8vw;
+  display: inline-block;
+  padding-left: 1vw;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+.otherperfomers {
+  margin-left: 8%;
+  width:80vw;
+  height: 30vw;
+  border: 0.5vw solid #1d1b1b;
+  border-radius: 2vw;
+  /*background: rgb(48, 47, 47);*/
+  padding: 1.5vw;
+  overflow-y: scroll;
+  animation-name:profile3 1s;
+  border-bottom:0.5vw solid #59ff00;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+  /*box-shadow:inset 1px 1px 20px rgb(71, 71, 71);*/
+
+}
+
+.other {
+  color: rgb(247, 247 , 247);
+  width: auto;
+  height: auto;
+  background:transparent;
+  margin:1vw;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s;
+  border-radius: 15px;
+  border-right:0.1vw solid #6fff00;
+}
+.other:hover {
+  color: rgb(64, 255, 0);
+  width: auto;
+  margin: 1vw;
+  display: flex;
+  animation-duration: 4s;
+  transition: 0.5s;
+  transform: translateY(-5px); 
+  
+}
+
+.player
+{
+  color: rgb(247, 247 , 247);
+  width: 75vw;
+  background:transparent;
+  margin:2vw 1vw;
+  display: flex;
+  transition: 0.5s;
+  border-radius: 15px;
+  border-right:0.1vw solid #6fff00;
+}
+.other_rankers_info {
+  background-color: #18181878;
+ /* border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px; */
+  border-radius: 15px;
+  width: 100%;
+  height: 3rem;
+  font-size: 1vw;
+  display: flex;
+  justify-content: space-around;
+
+}
+.allrankerprofiles
+{
+  width: 3vw;
+  height: 3vw;
+}
+#top_10
+{
+  color:azure;
+  font-size: 3vw;
+
+}
+
+
+
+/*
+@keyframes only {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+#font {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(187, 0, 255);
+  width: 100px;
+  height: 100px;
+  display: ;
+}
+#font:hover {
+  animation-name: only;
+  animation-duration: 2s;
+}
+#one {
+  color: #6fff00;
+  background: transparent;
+  font-size: 5rem;
+}
+
+*/
+
+@media (max-width:986px)
+ {
+    body
+    {
+       background: #000000;
+       width: 100%;
+       height: auto;
+       overflow: auto;
+       border-top: 2vw solid #1eff00;
+    }   
+    
+    .leader
+    { margin: 0vw;
+      background: #000000;
+      width: 100%;
+      font-size: 4vw;
+      color: #59ff00;
+    }
+    .fire
+    {
+      width: 8vw;
+      height: 8vw;
+    }
+    .leader.fire
+     {
+       width: 40vw; 
+       height: 40vw;   
+     }
+    .container_for_3_rankers
+    {
+      width: 100%;
+       height: 100vw;
+      display: flexbox;
+      flex-direction: column;
+      background: #000000;
+    }
+   .top3
+   {
+    width: 50vw;
+    height: 20vw;
+   }
+    .for_top_rankers
+    {
+      width: 100%;
+      height: 20vw;
+    }
+    .for_top_rankers h3 , h4 
+    {
+      font-size: 3vw;
+    }
+    #para
+    {
+      font-size: 2vw;
+    }
+     #toprankersprofile
+     {
+      width: 20vw;
+      height: 20vw;
+
+     }
+
+     .otherperfomers
+     {
+      border:1vw solid #1eff00;
+      height: 30vw;
+      overflow: scroll;
+     }
+   .other
+   {
+    margin: 2vw;
+    width: 95%;
+    height: auto;
+    background: #000;
+    justify-content: center;
+   }
+    .allrankerprofiles
+    {
+      width: 10vw;
+      height: 10vw;
+    }
+    .other_rankers_info h3 ,h3 ,p
+    {
+       font-size:2.5vw ;
+    }
+
+  }

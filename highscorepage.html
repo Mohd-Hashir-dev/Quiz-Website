@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Score</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* display: flex;
+            justify-content: center; */
+
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: #242424;
+            color: wheat;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #SCORE {
+            position: absolute;
+            left: 550px;
+            top: 175px;
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="SCORE">100</div>
+        <h1>Motivational Lines</h1>
+    </div>
+    <script>
+        let SCORE = document.getElementById("SCORE")
+        // console.log(SCORE)
+        let motivLine = document.getElementsByTagName("h1")[0]
+        let recentScore = localStorage.getItem('recentScore')   // get recent score form local storage.(code line 737)
+        const finalScore = document.getElementsByClassName("finalScore")
+        if (!localStorage.getItem('highscore')) {
+            localStorage.setItem('highscore', JSON.stringify([]));
+        }
+
+        let highscore = localStorage.getItem('highscore') || [];// get highscore form local storage 
+        JSON.parse(highscore)
+        localStorage.setItem('highscore', []);
+        SCORE.innerText = recentScore //print current highscore
+        console.log(highscore) // to print highscore
+        console.log(localStorage.getItem('username')) // print username
+
+        if (recentScore <= 20) {
+            motivLine.innerText = "Better Luck next time"
+        } else if (highscore === 60) {
+            motivLine.innerText = "Awsome, Champion!"
+        } else {
+            motivLine.innerText = "Great you score good"
+        }
+
+        // console.log(highscore)
+        console.log(recentScore+" recentscore")
+        console.log(SCORE+" SCORE")
+        const savehighscore = () => {
+            const highSc = {
+                score: recentScore,
+                name: usernameInput.value,
+            };
+            highscore.push(highSc)
+            highscore.sort((a, b) => b.score - a.score)
+        }
+
+    </script>
+    <script src="Display-Question.js"></script>
+    <script src="page1-page2.js"></script>
+</body>
+
+</html>

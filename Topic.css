@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    display: flexbox;
+    flex-direction: column;
+    display: flex;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu;
+    overflow: hidden;
+
+}
+
+.whole_body {
+    display: flex;
+
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.quote {
+    display: flexbox;
+    align-items: center;
+    width: 70vw;
+    height: 99vh;
+    font-size: 1vw;
+    color: antiquewhite;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    border-right: 2vw ridge #6fff00;
+    font-family: Century Gothic;
+    background: #000000;
+    overflow: hidden;
+
+}
+
+.container {
+    margin: 3vw;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 23vw;
+    background: #252525;
+    justify-content: space-evenly;
+    border-left: 1vw ridge #6fff00;
+    transition: 1s;
+    filter: drop-shadow(4px 5px 15px rgb(0, 0, 0));
+}
+
+/* "Topic" text  formating*/
+.text {
+    color: #6fff00;
+    overflow: hidden;
+    padding: 1vw 2vw;
+    background: transparent;
+    letter-spacing: 0.5vw;
+    font-family: Century Gothic;
+    /* background-color: red; */
+}
+#Usname{
+    /* background-color: red; */
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+p {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    padding-left: 3.3vw;
+    background: transparent;
+    font-size: 1.6vw;
+}
+
+/* topics written inside this class div*/
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 17vw;
+    height: 3vw;
+    border: none;
+    border-left: 4px solid #6fff00;
+    /* border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    border-radius: 0px;
+    margin: 2vw 3vw;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+
+/* topics written inside this class div while hover*/
+.card:hover {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    height: 3vw;
+    background: rgba(84, 85, 79, 0.882);
+    background: #6fff00;
+    border-left: 4px solid #000000;
+    transition: 0.5s;
+    transform: translatez(2rem);
+}
+
+
+
+
+/* text inside card "topic names"*/
+.card {
+    font-size: 1.2vw;
+}
+
+/* lines */
+
+#quote {
+    font-size: 3vw;
+    padding-left: 3vw;
+}
+
+.boy {
+    margin: 0;
+    height: 45vw;
+    width: 50vw;
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
+    transition: 0.5s;
+}
+
+
+@media (max-width:1000px) {
+    body {
+
+        background: greenyellow;
+        overflow: scroll;
+        color: #000;
+    }
+
+    .whole_body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quote {
+        background: transparent;
+        height: 120vw;
+        width: 100%;
+        font-size: 6vw;
+        color: #000;
+    }
+
+    .quote p {
+        font-size: 6vw;
+    }
+
+    #quote {
+        padding: 1vw 0vw;
+        background: #000;
+        font-size: 9vw;
+    }
+
+    .boy {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .container {
+        padding-top: 5vw;
+        padding-left: 5vw;
+        height: 169vw;
+        width: 90vw;
+        border: hidden;
+        border-radius: 25px;
+        justify-content: center;
+    }
+
+    /* .container .card {} */
+
+    .card {
+        transform: translateX(9vw);
+        margin: 5vw;
+        padding-left: 2vw;
+        height: 15vw;
+        width: 50vw;
+        font-size: 6vw;
+        border-radius: 15px 15px;
+        border: hidden;
+    }
+
+    .card:hover {
+        height: 15vw;
+        width: 50vw;
+    }
+
+    .card {
+        font-size: 5vw;
+    }
+
+}

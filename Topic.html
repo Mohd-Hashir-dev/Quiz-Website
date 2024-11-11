@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics</title>
+    <link rel="stylesheet" href="Topic.css">
+</head>
+
+<body>
+    <div class="whole_body">
+        <div class="quote">
+            <!-- ######################### -->
+            <!-- <div class="heading">
+                <h1 id="Usname">User</h1>
+                <h1>,</h1>&nbsp;&nbsp;
+
+                <h1>Choose the Quiz Topic</h1>
+            </div> -->
+            <!-- ####################### -->
+            <h1 id="quote">
+                <span class="text">Topics</span>
+            </h1>
+            <p>So ,
+                <span id="Usname" class="text">"Your Name"</span>what would you like to learn today ! .
+            </p>
+            <img src="Novelist writing-cuate (1).png" class="boy">
+        </div>
+
+        <div class="container">
+            <!-- <div>
+                <div class="card">
+                    <h1>General Knowledge</h1>
+                </div>
+
+                <div class="card">
+                    <h1>Sports</h1>
+                </div>
+
+                <div class="card">
+                    <h1>Python</h1>
+                </div>
+
+                <div class="card">
+                    <h1>Javascript</h1>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <h1>Technology</h1>
+                </div>
+
+                <div class="card">
+                    <h1>World Capitals</h1>
+                </div>
+
+                <div class="card">
+                    <h1>Biology</h1>
+                </div>
+
+                <div class="card">
+                    <h1>Literature</h1>
+                </div>
+            </div> -->
+            <button class="topic-btn card" data-topic="gk">General Knowledge</button>
+            <button class="topic-btn card" data-topic="sport">Sport</button>
+            <button class="topic-btn card" data-topic="javaScript">JavaScript</button>
+            <button class="topic-btn card" data-topic="World_Capitals">World Capitals</button>
+            <button class="topic-btn card" data-topic="Technology">Technology</button>
+            <button class="topic-btn card" data-topic="Python">Python</button>
+            <button class="topic-btn card" data-topic="history">History</button>
+            <button class="topic-btn card" data-topic="Litrature">Litrature</button>
+        </div>
+    </div>
+    <script>
+        let username = document.getElementById("Usname")// to print username
+        username.innerText = localStorage.getItem('username')
+        document.body.style.height = '100%';
+        // code for topic selection 
+        let selectedTopic = document.querySelectorAll('.topic-btn')
+        selectedTopic.forEach(button => {
+            button.addEventListener('click', () => {
+                const selectedTopic = button.dataset.topic;
+                localStorage.setItem('selectedTopic', selectedTopic);
+                window.location.href = "Display-Question.html";
+                window.onload()
+            });
+        });
+    </script>
+</body>
+
+</html>

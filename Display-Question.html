@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz questions</title>
+    <link rel="stylesheet" href="Display-Question.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <h1>Give wings to your Brain.</h1> -->
+        <div class="quiz-box">
+            <div class="indicator-items">
+                <div class="head-item">
+                    <p class="headline">
+                        Question
+                    </p>
+                    <h1 class="head-textline finalScore" id="questionCounter">
+                        1/5
+                    </h1>
+                </div>
+                <div class="head-item">
+                    <p class="headline">
+                        Score
+                    </p>
+                    <h1 class="head-textline" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h2 id="question">Question here!</h2>
+            <div id="answer-btn">
+                <button class="option" data-number="1">Option 1</button>
+                <button class="option" data-number="2">Option 2</button>
+                <button class="option" data-number="3">Option 3</button>
+                <button class="option" data-number="4">Option 4</button>
+            </div>
+        </div>
+    </div>
+    <script src="Display-Question.js"></script>
+</body>
+
+</html>

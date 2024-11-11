@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #242424; */
+    background: url(moon-surface.jpg);
+}
+
+
+.container {
+    /* background: wheat; */
+    width: 40%;
+    margin: 80px auto 0;
+    border-radius: 10px;
+    padding: 10px 30px 15px 30px;
+    /* box-shadow: 20px 20px 50px rgba(0, 0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); */
+    /* 10015 css tool  */
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.025);
+}
+
+.container h2 {
+    /* color: #242424; */
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid #242424;
+    padding: 0 0 20px 0px;
+    /* background-color: yellow; */
+}
+
+button {
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #242424;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#answer-btn {
+    margin: 10px 0;
+}
+
+.correct {
+    background-color: lightgreen;
+    transition: ease .2s;
+}
+
+.incorrect {
+    background-color: red;
+    transition: ease .2s;
+}
+
+.indicator-items {
+    color: white;
+    margin: 0px 0 10px 0;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid #242424; */
+}
+
+.head-item {
+    text-align: center;
+    font-size: 15px;
+}
+::selection{
+    background-color: darkgray;
+    color: black;
+}

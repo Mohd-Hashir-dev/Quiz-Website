@@ -1,0 +1,376 @@
+@keyframes images
+{
+from
+{
+    transform: skew(-10deg , -10deg);
+}
+to 
+{
+    transform: skew(10deg , 10deg);
+}
+}
+
+
+body
+{
+color: antiquewhite;
+background: rgb(33, 32, 32);
+font-family: Georgia, 'Times New Roman', Times, serif,;
+font-family: Century Gothic;
+padding: 0 6vw;
+overflow-x:hidden;
+}
+header h1
+{
+font-size: 3.5vw;
+display: flex;
+}
+h1
+{
+padding:0 1vw;
+font-size: 3vw;
+}
+h3
+{
+padding: 0 1vw;
+background: #10bc10;
+font-size: 2vw;
+}
+p
+{
+font-size: 1.2vw;
+font-weight: 300;
+padding: 0 1vw;
+}
+.navbar
+{
+font-size: 1.2vw;
+font-weight: 550;
+}
+#Our_Team
+{
+background: #000;
+}
+.div
+{
+display: flex;
+margin:10vw 0px;
+
+}
+#ourteam
+{
+background: #000;
+}
+#What_weoffer
+{
+background: #000;
+}
+img
+{
+width: 35vw;
+height:35vw ;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+#ourteam
+{
+width: 35vw;
+height:30vw ;
+}
+.even
+{
+border-left: 4px solid #58c113 ;
+}
+.odd
+{
+border-right: 4px solid #58c113 ;
+background: #000;
+}
+#thanku
+{
+    margin: -1vw -7vw;
+font-size: 3vw;
+color: black;
+background: #0ae32a;
+padding: 1.5vw 8vw;
+}
+.f1
+{
+margin: 1vw -7vw;
+background: #000;
+font-size:2vw ;
+display: flex;
+justify-content: space-around;
+}
+.f1 div
+{
+margin: 0vw -10vw;
+padding: 0;
+font-size:1.3vw ;
+display: flex;
+flex-direction: column;
+background: #000;
+
+}
+.f1 div h6:hover
+{
+color: #66ff00;
+}
+.f2
+{
+    margin: -1vw -7vw;
+font-size:2vw ;
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+padding: 0.5vw 3vw;
+background: #000;
+overflow: hidden;
+}
+.f2 div
+{
+margin: 0;
+padding: 0;
+font-size:1.3vw;
+}
+.div1 p
+{
+font-size: 1vw;
+}
+.div2 a
+{
+text-decoration: none;
+color: white;
+padding: 0 1vw;
+}
+
+.div2 a .icons
+{
+width: 2vw;
+height: 2vw;
+padding: 1vw;
+
+}
+/*
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+/* for mobile phone screen "lesser then 700px"
+
+
+@media only screen and(max-width: 600px) 
+{
+
+body
+{
+    font-family: Century Gothic;
+    background: #000;
+    padding: 0vw ;    
+}
+
+.div
+{
+    display: flex;
+    justify-content: center;
+}
+
+header h1
+{
+    font-size: 7vw;
+}
+header h3
+{
+    font-size: 5vw;
+}
+.odd 
+{
+        
+    animation-name:imageodd ;
+    animation-duration: 2s;
+    animation-iteration-count:1 ;
+    border: none;
+    padding: 0;
+    width: 90vw;
+    height: 90vw;
+    margin-top:1vw solid #59d208 ;
+}
+
+.even 
+{
+    animation-name:imageeven ;
+    animation-duration: 2s;
+    animation-iteration-count:1 ;
+    padding: 0;
+    width: 90vw;
+    height: 90vw;
+    margin-top:1vw solid #59d208 ;
+}
+#ourteam
+{
+width:90vw;
+height:80vw ;
+}
+h1
+{
+    font-size: 5.5vw;
+}
+p 
+{
+    font-size: 3.5vw;
+}
+span
+{
+    padding: vw 0vw;
+    font-size: 4vw;
+    font-weight: 500;
+    color: #17ae2e;
+}
+
+    .f1 div h6
+    {
+    padding: 0;
+    margin:3vw;
+
+    font-size: 3vw;
+    }
+
+    .f2 div a , p
+    {
+    font-size: 5vw;
+    }
+
+    .f2 .div1 p
+    {
+    display: flex;
+    flex-direction: row ;
+    font-size: 2vw;
+    }
+    .f2 .div2 a
+    {
+    font-size: 2vw;
+    }
+    #thanku
+    {
+    font-size: 5vw;
+    }
+
+}
+*/
+
+@media (max-width: 980px)
+{
+body {
+    font-family: "Century Gothic", sans-serif;
+    overflow-x: hidden;
+    margin: 0vw ;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 1vw;
+    margin-top: 8vw;
+}
+
+header h1 {
+    font-size: 8vw;
+}
+
+header h3 {
+    font-size: 5vw;
+}
+
+.odd {
+    animation-name: imageodd;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    border: none;
+    width: 85vw;
+    height: 85vw;
+    margin-top: 1.5vw;
+    border-radius: 25px;
+
+}
+
+.even {
+    animation-name: imageeven;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    padding: 0;
+    width: 90vw;
+    height: 90vw;
+    margin-top: 1vw; 
+    
+}
+
+#ourteam {
+    /*
+    width: 83vw;
+    height: 70vw;
+    */
+    width: auto;
+    height: fit-content;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 5.5vw;
+}
+
+p {
+    padding: 0 1vw;
+    font-size: 3.5vw;
+}
+
+span {
+    padding: 0; 
+    font-size: 4vw;
+    font-weight: 500;
+    color: #17ae2e;
+}
+
+.f1 div h6 {
+    padding: 0;
+    margin: 3vw;
+    font-size: 3vw;
+}
+#thanku,.f1, .f2
+{
+    margin: 0vw -10vw;
+}
+.f2
+{
+    padding: 6vw;
+}
+
+.f2 div a, 
+.f2 div p {
+    font-size: 5vw;
+}
+
+.f2 .div1 p {
+    display: flex;
+    flex-direction: row;
+    font-size: 2vw;
+}
+
+.f2 .div2 a {
+    font-size: 2vw;
+}
+
+#thanku {
+    font-size: 5vw;
+}
+.f2 .div2 .icons
+{
+    width: 5vw;
+    height: 5vw;
+}
+
+.What_weoffer , .Our_Team
+{
+    border-radius: 25px;
+}
+
+}
