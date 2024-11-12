@@ -12,6 +12,7 @@
             box-sizing: border-box;
             /* display: flex;
             justify-content: center; */
+            overflow: hidden;
 
         }
 
@@ -31,6 +32,22 @@
             left: 550px;
             top: 175px;
             font-size: 100px;
+        }
+
+        @media only screen and (max-width:426px) {
+            #SCORE {
+                position: absolute;
+                left: 170px;
+                top: 100px;
+            }
+        }
+
+        @media (max-width:320px) {
+            #SCORE {
+                position: absolute;
+                left: 115px;
+                top: 100px;
+            }
         }
     </style>
 </head>
@@ -66,8 +83,8 @@
         }
 
         // console.log(highscore)
-        console.log(recentScore+" recentscore")
-        console.log(SCORE+" SCORE")
+        console.log(recentScore + " recentscore")
+        console.log(SCORE + " SCORE")
         const savehighscore = () => {
             const highSc = {
                 score: recentScore,
