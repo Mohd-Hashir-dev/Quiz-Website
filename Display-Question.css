@@ -76,7 +76,21 @@ button {
     text-align: center;
     font-size: 15px;
 }
-::selection{
+
+::selection {
     background-color: darkgray;
     color: black;
+}
+
+@media (max-width:475px) {
+    .container {
+        width: 80%;
+        background-color: red;
+    }
+
+    .container h2 {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+    }
 }
