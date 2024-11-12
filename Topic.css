@@ -196,5 +196,7 @@ p {
     .card {
         font-size: 5vw;
     }
-
+    #Usname{
+        color: #242424;
+    }
 }
